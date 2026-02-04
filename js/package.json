@@ -1,0 +1,23 @@
+{
+  "name": "@go-liveview/client",
+  "version": "0.1.0",
+  "description": "Go LiveView JavaScript client",
+  "main": "dist/liveview.js",
+  "module": "dist/liveview.mjs",
+  "types": "dist/liveview.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/liveview.ts --format cjs,esm,iife --dts",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "morphdom": "^2.7.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "license": "MIT"
+}
