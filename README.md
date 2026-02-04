@@ -17,7 +17,7 @@ Phoenix LiveViewのGo実装。サーバーサイドレンダリングとWebSocke
 ### インストール
 
 ```bash
-go get github.com/fu2hito/go-liveview
+go get github.com/f4ah6o/go-liveview
 ```
 
 ### 基本的なLiveViewの作成
@@ -28,7 +28,7 @@ package main
 import (
     "net/url"
     "github.com/a-h/templ"
-    "github.com/fu2hito/go-liveview"
+    "github.com/f4ah6o/go-liveview"
 )
 
 // Counter LiveView
